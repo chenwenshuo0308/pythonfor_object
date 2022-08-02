@@ -22,7 +22,7 @@ class Animal(Biology):
         print(self._race)
 
 
-class Person():
+class Person:
     __worthy = ""
     __age = 0
     _race = ""
@@ -33,6 +33,7 @@ class Person():
     def setage(self, num):
         self.__age = num
 
+    #读取操作
     def getage(self):
         return self.__age
 
@@ -47,10 +48,12 @@ class Person():
 # a.test2()
 # print(Biology._Biology__sort)#私有化通过名字重整实现
 
-zhangsan = Person()
-lisi=Person()
-zhangsan.setage(18)
-
-print(zhangsan.getage())
+# zhangsan = Person()
+# print(zhangsan.x)
+# lisi=Person()
+# zhangsan.setage(18)
+#
+# print(zhangsan.getage())
 #print(lisi.x)
 
+print(Animal.__base__)

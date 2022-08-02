@@ -18,6 +18,9 @@ class Person:
     def functiion():
         print("静态方法")
 
+    def __ren(self):
+        print("私有方法，类内部使用")
+
 
 zhangsan = Person()
 zhangsan.setname(zhangsan)
@@ -39,4 +42,7 @@ print(zhangsan.name,zhangsan.age)
 # zhangsan.functiion()
 # print(zhangsan.age)
 # print(zhangsan.__dict__)
-# print(Person.__dict__)
+#print(Person.__dict__)
+#私有化方法
+#print(Person.__ren)
+#print(Person._Person__ren)
